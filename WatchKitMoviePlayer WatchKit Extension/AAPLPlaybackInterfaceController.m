@@ -27,14 +27,13 @@
 	
 	if (self) {
 		NSURL *movieOne = [NSURL URLWithString: @"http://www.billsnook.com/watchkit/sample_clip1.m4v" ];
-		// [[NSBundle mainBundle] URLForResource:@"sample_clip1" withExtension:@"m4v"];
 
         NSURL *movieTwo = [[NSBundle mainBundle] URLForResource:@"sample_clip2" withExtension:@"mov"];
 		
         _elementsList = @[movieOne, movieTwo];
         
 		_posterImages = @[
-            [WKImage imageWithImageName:@"Sample1"],
+            [WKImage imageWithImageName:@"Sample1"],	// These files are stored in WatchKit App Assets folder
             [WKImage imageWithImageName:@"Sample2"]
         ];
 		
