@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="15A178u" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.13"/>
+    </dependencies>
+    <scenes>
+        <!--Playback Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Playback Interface Controller" id="AgC-eL-Hgc" customClass="AAPLPlaybackInterfaceController">
+                    <items>
+                        <table alignment="left" id="O4w-x9-4g0">
+                            <items>
+                                <tableRow identifier="Media Playback Controller" id="Jw7-dx-9Vb" customClass="AAPLMediaPlaybackController">
+                                    <group key="rootItem" width="1" height="117.5" alignment="left" id="09S-aH-5fz">
+                                        <items>
+                                            <movie width="1" height="100" alignment="left" id="fTH-KT-m1T"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="movie" destination="fTH-KT-m1T" id="dvd-xj-ako"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="playbackTable" destination="O4w-x9-4g0" id="2u8-J3-RBu"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="305" y="429"/>
+        </scene>
+    </scenes>
+</document>
